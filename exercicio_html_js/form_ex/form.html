@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Exercício de formulário</title>
+</head>
+<body>
+    <div class='container'>
+        <h1>Validando Número</h1>
+        <form id="formulario">
+            <input id='cep' name='CEP'placeholder='Seu CEP'type="tel">
+            <p id="negativa">O seu número de CEP é maior que o de telefone</p>
+            <input id='telefone' name='telefone' placeholder='Seu telefone'type="tel">
+            <button type="submit">Enviar</button>
+            <p id="positiva">Mensagem enviada com sucesso!</p>
+        </form>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
