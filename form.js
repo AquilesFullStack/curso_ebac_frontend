@@ -1,6 +1,4 @@
 const form = document.getElementById('form');
-let cep = document.getElementById('cep');
-let telefone = document.getElementById('telefone');
 let formEValido = false;
 
 function validaCampo(numeroEndereco){
@@ -13,7 +11,9 @@ form.addEventListener('submit', function(e){
 
     const cep = document.getElementById('cep');
     const telefone = document.getElementById('telefone');
-    const successMesssage = `Mensagem enviada com sucesso! CEP: ${cep.value} - Telefone ${telefone.value}`;
+    const cepFloat = parseFloat(cep);
+    const telefoneFloat = parseFloat(telefone);
+    const successMesssage = `Mensagem enviada com sucesso!`;
 
     formEValido = validaCampo(cep);
     if (formEValido < telefone.value.length){
@@ -32,18 +32,5 @@ form.addEventListener('submit', function(e){
         const containersuccessMessage = document.querySelector('.success-message');
         containersuccessMessage.innerHTML = successMesssage;
         containersuccessMessage.style.display = 'none';
-    }
-})
-
-cep.addEventListener('keyup', function(e){
-    console.log(e.target.value);
-    formEValido = validaCampo(e.target);   
-
-    if (formEValido){
-        cep.classList.add('error');
-        document.querySelector('.message-error').style.display = 'block';
-    } else {
-        cep.classList.remove('error');
-        document.querySelector('.message-error').style.display = 'none';
     }
 })
