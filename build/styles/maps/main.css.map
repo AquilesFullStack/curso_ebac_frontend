@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss","variaveis.scss"],"names":[],"mappings":"AAEA;EACI,kBCHU;EDIV,OCHO;EDIP","file":"../main.css","sourcesContent":["@use 'variaveis';\r\n\r\nbody{\r\n    background-color: variaveis.$corPrimaria;\r\n    color: variaveis.$corTexto;\r\n    text-align: center;\r\n}\r\n\r\n","$corPrimaria: blue;\r\n$corTexto: white;"]}

@@ -1,0 +1,8 @@
+@use 'variaveis';
+
+body{
+    background-color: variaveis.$corPrimaria;
+    color: variaveis.$corTexto;
+    text-align: center;
+}
+
