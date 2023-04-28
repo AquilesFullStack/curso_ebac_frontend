@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te ajudo a juntar dinheiro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="@@ENDERECO_DO_CSS">
+</head>
+<body>
+    <div class="container">
+        <div id="text" class="digitador"></div>
+        <form id="formulario">
+          <label for="input-valor-total">Quanto você quer juntar em R$?</label>
+          <input type="number" id="input-valor-total" required>
+          <label for="input-valor-M">Em quantos tempo ? (em meses)</label>
+          <input type="number" id="input-valor-M" required>
+          <button type="submit">Enviar</button>
+          <div class="resultado">
+            Você terá que guardar R$<span id="resultado-valor-D"></span> em <span id="resultado-valor-Meses"></span> meses para ter R$<span id="resultado-valor-Total"></span>.
+          </div> 
+        </form>
+      </div>
+    <script src="@@ENDERECO_DO_JS"></script>
+    <script href="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+</body>
+</html>
